@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try the Swipeback beta</title>
+<meta name="description" content="Test Swipeback before it hits the App Store. Free, takes two minutes.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .qr { display: block; width: 240px; max-width: 100%; margin: 6px auto 0; border-radius: 14px; }
+  .btn { display: block; text-align: center; background: var(--brand); color: #fff; font-weight: 800; font-size: 18px; text-decoration: none; padding: 16px; border-radius: 16px; border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); margin: 18px 0 8px; }
+  .btn.ghost { background: var(--card); color: var(--ink); }
+  ol li { margin: 10px 0; }
+  .center { text-align: center; }
+  .phone-only { display: none; }
+  @media (hover: none) and (pointer: coarse) { .phone-only { display: block; } .desktop-only { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><a href="index.html">Swipeback</a></header>
+  <h1>Try the beta 🎞️</h1>
+  <p class="meta">Swipe through the screenshots you forgot about and free up space. Free while it's in beta. Takes about two minutes to set up.</p>
+
+  <h2>1. Get Expo Go</h2>
+  <p>Swipeback's beta runs inside <strong>Expo Go</strong>, a free app for testing new apps.</p>
+  <a class="btn ghost" href="https://apps.apple.com/app/expo-go/id982107779">Expo Go for iPhone</a>
+  <a class="btn ghost" href="https://play.google.com/store/apps/details?id=host.exp.exponent">Expo Go for Android</a>
+
+  <h2>2. Open Swipeback</h2>
+  <div class="phone-only">
+    <p>On your phone? Tap this once Expo Go is installed:</p>
+    <a class="btn" href="exp://u.expo.dev/6b013fb8-358e-4501-80dd-c81b67c2f82b?runtime-version=exposdk%3A58.0.0&amp;channel-name=beta">Open Swipeback in Expo Go</a>
+    <p class="meta center">Or scan the code below from another device.</p>
+  </div>
+  <div class="box center">
+    <p class="desktop-only" style="margin-top:0">Scan with your iPhone camera (or the Expo Go scanner on Android):</p>
+    <img class="qr" src="beta-qr.svg" alt="QR code that opens Swipeback in Expo Go">
+  </div>
+
+  <h2>3. Good to know</h2>
+  <ol>
+    <li><strong>iPhone works best.</strong> On Android, Expo Go can't see your whole photo library, so some features are limited until the real app is out.</li>
+    <li><strong>It's safe.</strong> Nothing is deleted unless you confirm it, and deleted photos stay in Recently Deleted for 30 days. Nothing leaves your phone. <a href="privacy.html">Privacy policy</a>.</li>
+    <li><strong>Updates are automatic.</strong> Close and reopen Swipeback in Expo Go to get the newest version.</li>
+    <li>Ignore any "development" labels from Expo Go. That's normal for a beta.</li>
+  </ol>
+
+  <h2>Tell us what you think</h2>
+  <p>What made you smile? What was confusing? Anything broken? Email <a href="mailto:swipebackapp@icloud.com?subject=Swipeback%20beta%20feedback">swipebackapp@icloud.com</a>. Screenshots welcome (ironically).</p>
+
+  <nav><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+</main>
+</body>
+</html>
